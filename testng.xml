@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sovereign Test Suite">
+	<test name="Tenancy Management test">
+		<classes>
+			<!-- 				
+			<class name="com.sat.TestRunner.TestRunner_FraudCases" />			
+			<class name="com.sat.TestRunner.TestRunner_AutoRoutingPhone" />
+			<class name="com.sat.TestRunner.TestRunner_Queues" />
+			<class name="com.sat.TestRunner.TestRunner_GenericCases" />
+			<class name="com.sat.TestRunner.TestRunner_Neighbourhood" />
+			<class name="com.sat.TestRunner.TestRunner_LocalGlobalSearch" />
+			<class name="com.sat.TestRunner.TestRunner_CustomerEntitiesForm" />
+			<class name="com.sat.TestRunner.TestRunner_BlockSchemeCases" />
+			<class name="com.sat.TestRunner.TestRunner_AutoRoutingTask" />
+			<class name="com.sat.TestRunner.TestRunner_Optimization" />
+			<class name="com.sat.TestRunner.TestRunner_Neighbourhood" />
+			<class name="com.sat.TestRunner.TestRunner_SLATIMER" />
+			
+<class name="com.sat.TestRunner.TestRunner_BlockSchemeCases" />
+			<class name="com.sat.TestRunner.TestRunner_CustomerEntitiesForm" />
+			<class name="com.sat.TestRunner.TestRunner_AutoRoutingPhone" />
+			<class name="com.sat.TestRunner.TestRunner_GenericCases" />
+			<class name="com.sat.TestRunner.TestRunner_AutoRoutingTask" />
+            <class name="com.sat.TestRunner.TestRunner_FraudCases" />
+            <class name="com.sat.TestRunner.TestRunner_Queues" /> -->
+<class name="com.sat.TestRunner.TestRunner" />
+		</classes>
+	</test>
+
+	<!-- <test name="Employment Training test">
+		<classes>
+			<class name="com.sat.TestRunner.TestRunner_Outcome" />
+		</classes>
+	</test> -->
+
+</suite>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Sovereign Test Suite" duration-ms="359467" started-at="2023-04-24T13:50:13 UTC" finished-at="2023-04-24T13:56:13 UTC">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sat.TestRunner.TestRunner@1e6d1014]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Tenancy Management test" duration-ms="359467" started-at="2023-04-24T13:50:13 UTC" finished-at="2023-04-24T13:56:13 UTC">
+      <class name="com.sat.TestRunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.sat.TestRunner.TestRunner@1e6d1014]" name="setUpClass" is-config="true" duration-ms="940" started-at="2023-04-24T13:50:13 UTC" finished-at="2023-04-24T13:50:14 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sat.TestRunner.TestRunner@1e6d1014]" name="runScenario" duration-ms="121356" started-at="2023-04-24T13:50:14 UTC" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-24T13:52:16 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create a single case"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Creation of a case"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sat.TestRunner.TestRunner@1e6d1014]" name="runScenario" duration-ms="119479" started-at="2023-04-24T13:52:16 UTC" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-24T13:54:15 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Creating multiple cases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Creation of a case"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sat.TestRunner.TestRunner@1e6d1014]" name="runScenario" duration-ms="116998" started-at="2023-04-24T13:54:15 UTC" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-24T13:56:12 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Creating multiple cases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Creation of a case"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.sat.TestRunner.TestRunner@1e6d1014]" name="tearDownClass" is-config="true" duration-ms="635" started-at="2023-04-24T13:56:12 UTC" finished-at="2023-04-24T13:56:13 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.sat.TestRunner.TestRunner -->
+    </test> <!-- Tenancy Management test -->
+  </suite> <!-- Sovereign Test Suite -->
+</testng-results>
