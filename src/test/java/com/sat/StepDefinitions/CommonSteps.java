@@ -82,4 +82,9 @@ public class CommonSteps {
 		cases.validateCase();
 
 	}
+	//anusha - added by me 
+	@Then("user search for the case under {string}")
+	public void user_search_for_the_case(String tab) {
+		cases.searchCase(tab);
+	}
 }
