@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -28,6 +30,7 @@ public class CasePage {
 	Testutil testutil = new Testutil(driver);
 	Actions action = new Actions(driver);
 	Assertions assertion = new Assertions(driver);
+	private CustomerPage accountpage = new CustomerPage(driver);
 
 	public CasePage(WebDriver rdriver) {
 		driver = rdriver;
@@ -36,6 +39,13 @@ public class CasePage {
 
 	@FindBy(xpath = "//*[text()='Assign']/parent::button")
 	WebElement assignButton;
+
+	@FindBy(xpath = "//input[@aria-label='Case Filter by keyword']")
+	WebElement SearchField;
+
+	@FindBy(xpath = "//input[@aria-label='Case Number'][contains(@id,'ticketnumber')][contains(@id,'text')]") // input[@aria-label='Case
+																												// Number']
+	WebElement getCaseNumber;
 
 	public By initialVictimQuestions = By.xpath(
 			"//h2[text()='INITIAL VICTIM ASSESSMENT QUESTIONS']/parent::section/following-sibling::div/div/div//select");
@@ -104,10 +114,21 @@ public class CasePage {
 	public void validateCase() throws InterruptedException {
 		Thread.sleep(3000);
 		Wait.waitUntilElementVisible(driver, driver.findElement(By.xpath("//*[contains(text(),'Saved')]")));
-		boolean check=getCaseNumber().isEmpty();
-		System.out.println("check:"+check);
+		boolean check = getCaseNumber().isEmpty();
+		System.out.println("check:" + check);
 		assertion.CheckAssertionTrue(!check, "Case number is null");
-		//assertion.CheckAssertionNull(check);
-	}
+		// assertion.CheckAssertionNull(check);
 	}
 
+	public void searchCase(String tab) {
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", getCaseNumber);
+		Wait.waitUntilElementVisible(driver, driver.findElement(By.xpath("//*[contains(text(),'Saved')]")));
+		String casenumber = getCaseNumber.getAttribute("title");
+		System.out.println("caseid is :" + casenumber);
+		accountpage.entity(tab);
+		SearchField.sendKeys(casenumber);
+		SearchField.sendKeys(Keys.ENTER);
+
+	}
+
+}
